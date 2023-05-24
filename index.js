@@ -28,16 +28,7 @@ async function run() {
       const cursor = inventoryCollection.find()
       const inventoris = await cursor.toArray();
       res.send(inventoris);
-      // // Filter by email
-      // const email = req.query.email;
-      //   let query = {};
-      // if (email) {
-      //   query = { email: email };
-      // }
-      // const query = {};
-      // const cursor = inventoryCollection.find();
-      // const inventoris = await cursor.toArray();
-      // res.send(inventoris);
+      
     });
     //   Get data by specific id
     app.get("/inventory/:id", async (req, res) => {
