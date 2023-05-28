@@ -58,7 +58,7 @@ async function run() {
       res.send(result);
     });
 
-    // Add item to DB
+    // Add item to the DB
     app.post("/inventory", async (req, res) => {
       const newItem = req.body;
       console.log(newItem)
