@@ -30,7 +30,7 @@ async function run() {
       res.send(inventoris);
       
     });
-    //   Get data by specific id
+    //   Get data from specific id
     app.get("/inventory/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
