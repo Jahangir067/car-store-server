@@ -23,7 +23,7 @@ async function run() {
   try {
     // await client.connect();
     const inventoryCollection = client.db("carArchive").collection("inventory");
-    //   Get all data
+    //   Get all the data
     app.get("/inventory", async (req, res) => {
       const cursor = inventoryCollection.find()
       const inventoris = await cursor.toArray();
