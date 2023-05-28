@@ -11,7 +11,7 @@ app.use(express.json());
 
 
 
-// Connect DB
+// Connect to DB
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.d4qhn1l.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
