@@ -38,7 +38,7 @@ async function run() {
       res.send(inventory);
     });
 
-    // Update quantity by delivery & the restock button
+    // Update quantity by delivery &  restock button
     app.put("/inventory/:id", async (req, res) => {
       const id = req.params.id;
       const updateQuantity = req.body;
